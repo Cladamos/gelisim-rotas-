@@ -55,26 +55,26 @@ function Navbar() {
     {
       icon: IconHome,
       title: "Tanıtım",
-      description: "Biz kimiz, ne yapıyoruz?",
+      description: "Sitemizin keşfedin ve daha fazla bilgi edinin",
       id: "/#header",
     },
 
     {
       icon: IconList,
       title: "Özellikler",
-      description: "Hizmetlerimizi keşfedin!",
+      description: "Hizmetlerimizin benzersiz özelliklerini keşfedin!",
       id: "/#features",
     },
     {
       icon: IconMail,
       title: "İletişim",
-      description: "Bize ulaşın",
+      description: "Bize ulaşın, sorularınızı yanıtlamaktan memnuniyet duyarız",
       id: "/#get-in-touch",
     },
     {
       icon: IconMessages,
       title: "Sık Sorulan Sorular",
-      description: "",
+      description: "En çok merak edilen konular hakkında cevapları bulun",
       id: "/#faq",
     },
   ]

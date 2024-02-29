@@ -1,4 +1,3 @@
-import "dayjs/locale/tr"
 import { DatesProvider, Calendar } from "@mantine/dates"
 import { IconCurrentLocation, IconCheck } from "@tabler/icons-react"
 import { Container, Group, Indicator, Paper, Stack, Tooltip, Text, SimpleGrid } from "@mantine/core"

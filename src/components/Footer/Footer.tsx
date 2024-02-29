@@ -1,5 +1,5 @@
 import { Text, Container, ActionIcon, Group, rem } from "@mantine/core"
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from "@tabler/icons-react"
+import { IconBrandInstagram } from "@tabler/icons-react"
 import classes from "./Footer.module.css"
 
 const data = [
@@ -15,10 +15,10 @@ const data = [
       { label: "Sık Sorulan Sorular", link: "#faq" },
     ],
   },
-  {
+  /*   {
     title: "Topluluk",
     links: [{ label: "Forum", link: "/forum" }],
-  },
+  }, */
 ]
 
 export function Footer() {

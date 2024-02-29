@@ -27,8 +27,8 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 
 const mockdata = [
   { title: "Email", description: "matiriciejr@gmail.com", icon: IconAt },
-  { title: "Telefon Numarası", description: "+49 (800) 335 35 35", icon: IconPhone },
-  { title: "Adres", description: "844 Morris Park avenue", icon: IconMapPin },
+  { title: "Telefon Numarası", description: "+90 (553) 065 7091", icon: IconPhone },
+  { title: "Adres", description: "Gençlik Spor Merkezi Edirne/Merkez", icon: IconMapPin },
 ]
 
 export function ContactIconsList() {

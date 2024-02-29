@@ -29,7 +29,7 @@ function Task(props: TaskProps) {
         ref={setNodeRef}
         {...attributes}
         {...listeners}
-        maw={props.isMobile ? 250 : 500}
+        maw={props.isMobile ? 250 : 560}
         mih={100}
         opacity={props.todo.isCompleated === true ? "20%" : "70%"}
       >

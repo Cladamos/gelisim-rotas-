@@ -8,7 +8,6 @@ import { SortableContext, arrayMove, verticalListSortingStrategy } from "@dnd-ki
 import { restrictToVerticalAxis, restrictToFirstScrollableAncestor } from "@dnd-kit/modifiers"
 import Task from "./Todo"
 import { notifications } from "@mantine/notifications"
-import "dayjs/locale/tr"
 import { Todo, useTodo } from "../contexts/TodoContext"
 import CreateTodoModal from "./CreateTodoModal"
 import ShowTodoModal from "./ShowTodoModal"
@@ -135,7 +134,7 @@ function TodoList() {
         <ShowTodoModal opened={openedShowTodo} close={closeShowTodo} open={openShowTodo} selectedTodo={selectedTodo} />
 
         <Stack>
-          <Paper shadow={!isMobile ? "md" : undefined} withBorder={!isMobile} p={{ sm: "xs", md: "lg" }} radius="md">
+          <Paper shadow="md" withBorder p="lg" radius="md">
             <Stack p="md" gap="xl">
               <Group justify={isMobile ? "center" : "space-between"} gap="xl">
                 <Text size="25px" fw={700}>
