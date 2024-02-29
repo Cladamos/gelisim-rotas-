@@ -134,6 +134,9 @@ function TodoList() {
         <ShowTodoModal opened={openedShowTodo} close={closeShowTodo} open={openShowTodo} selectedTodo={selectedTodo} />
 
         <Stack>
+          <Button leftSection={<IconPlus size={30} />} variant="outline" size="md" radius="md" onClick={openCreateTodo}>
+            Yeni hedef ekle
+          </Button>
           <Paper shadow="md" withBorder p="lg" radius="md">
             <Stack p="md" gap="xl">
               <Group justify={isMobile ? "center" : "space-between"} gap="xl">
@@ -179,9 +182,6 @@ function TodoList() {
               </Group>
             </Stack>
           </Paper>
-          <Button leftSection={<IconPlus size={30} />} variant="outline" size="md" radius="md" onClick={openCreateTodo}>
-            Yeni hedef ekle
-          </Button>
         </Stack>
       </Container>
     </DndContext>

@@ -16,7 +16,7 @@ function GetSupport() {
         <Group justify="space-between" mt="md" mb="xs">
           <Text fw={500}>İşinde Uzman Kişilerden Destek Al</Text>
         </Group>
-        <Spoiler maxHeight={160} showLabel={<Text size="sm"> Daha fazla Göster</Text>} hideLabel={<Text size="sm"> Daha az Göster</Text>}>
+        <Spoiler maxHeight={160} showLabel={<Text size="sm">Göster</Text>} hideLabel={<Text size="sm">Gizle</Text>}>
           <Text size="sm" c="dimmed">
             Kişisel gelişim yolculuğunuzda, kariyer hedeflerinizi netleştirme ve bu hedeflere ulaşmanın en verimli yolunu belirleme konusunda
             zorlanıyorsanız, Gelişim Rotası olarak yanınızdayız. Kariyerinizde bir sonraki büyük adımı atmanız için gerekli motivasyonu ve yönü
