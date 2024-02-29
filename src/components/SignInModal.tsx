@@ -11,20 +11,20 @@ type SignInModalProps = {
 }
 
 function SignInModal(props: SignInModalProps) {
-  const ctx = useUser()
+  const userCtx = useUser()
 
   const form = useForm({
     initialValues: { username: "", email: "", password: "" },
 
     validate: {
-      username: (value) => (ctx.users.find((u) => u.username === value) ? "Bu kullancı adı kullanılmaktadır" : null),
+      username: (value) => (userCtx.users.find((u) => u.username === value) ? "Bu kullancı adı kullanılmaktadır" : null),
       email: (value) => (/^\S+@\S+$/.test(value) ? null : "Geçersiz email adresi"),
       password: (value) => (value.length > 7 ? null : "Şifreniz en az 8 haneli olmalıdır"),
     },
   })
 
   const handleSubmit = (user: User) => {
-    ctx.setUsers((u) => [...u, user])
+    userCtx.setUsers((u) => [...u, user])
     notifications.show({
       color: "teal",
       title: "Hesabınız oluşturuldu!",
@@ -33,6 +33,7 @@ function SignInModal(props: SignInModalProps) {
       loading: false,
     })
     props.close()
+    userCtx.setCurrUser(user)
     form.setValues({ username: "", email: "", password: "" })
   }
   return (
