@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useContext, useState } from "react"
+import { ReactNode, createContext, useContext } from "react"
 import { useLocalStorage } from "usehooks-ts"
 
 export type User = {
@@ -16,7 +16,7 @@ export const UserContext = createContext<{
 
 export const UserProvider = (props: { children: ReactNode }) => {
   const [users, setUsers] = useLocalStorage<User[]>("users", [])
-  const [currUser, setCurrUser] = useState<User | null>(null)
+  const [currUser, setCurrUser] = useLocalStorage<User | null>("user", null)
 
   return <UserContext.Provider value={{ users, setUsers, currUser, setCurrUser }}>{props.children}</UserContext.Provider>
 }
