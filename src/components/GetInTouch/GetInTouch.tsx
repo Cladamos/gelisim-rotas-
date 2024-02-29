@@ -2,7 +2,6 @@ import { Paper, Text, TextInput, Textarea, Button, Group, SimpleGrid, Container 
 import { ContactIconsList } from "./ContactIcons"
 import { notifications } from "@mantine/notifications"
 import { useForm } from "@mantine/form"
-import bg from "./bg.svg"
 import classes from "./GetInTouch.module.css"
 
 export function GetInTouch() {
@@ -26,7 +25,7 @@ export function GetInTouch() {
     <Container size="md" id="get-in-touch" py="xl">
       <Paper shadow="md" radius="lg">
         <div className={classes.wrapper}>
-          <div className={classes.contacts} style={{ backgroundImage: `url(${bg})` }}>
+          <div className={classes.contacts} style={{ backgroundImage: `url(/bg.svg)` }}>
             <Text fz="lg" fw={700} className={classes.title} c="#fff">
               İletişim Bilgileri
             </Text>
