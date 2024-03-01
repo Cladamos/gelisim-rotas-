@@ -13,7 +13,7 @@ type GetSupportModalProps = {
       {
         title: string
         author: string
-        date: number
+        date: string
         messages: {
           message: string
           username: string
@@ -35,8 +35,8 @@ function CreateMessageModal(props: GetSupportModalProps) {
     )
     props.close()
     notifications.show({
-      title: "Talebiniz Gönderiliyor",
-      message: "Talebiniz sistemimize gelmesi bekleniyor",
+      title: "Tebrikler",
+      message: "İletmiş olduğunuz mesaj başarıyla formumuza eklendi",
     })
   }
 

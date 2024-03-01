@@ -34,6 +34,7 @@ const menuItems: MenuItems[] = [
   { label: "Hedefler", route: "/todos" },
   { label: "Destek Al", route: "/get-support" },
   { label: "Takvim", route: "/calendar" },
+  { label: "Forum", route: "/forum" },
 ]
 
 function Navbar() {
@@ -122,7 +123,7 @@ function Navbar() {
           <Container size="lg" h="100%">
             <Group h="100%" justify="space-between">
               <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-              <Text size="xl" w={isMobile ? 150 : 280} fw={900}>
+              <Text size="xl" w={isMobile ? 150 : 250} fw={900}>
                 Gelişim Rotası
               </Text>
               <Group gap="sm" visibleFrom="sm" justify="center">

@@ -15,7 +15,7 @@ type ForumModalProps = {
       {
         title: string
         author: string
-        date: number
+        date: string
         messages: {
           message: string
           username: string
@@ -40,17 +40,15 @@ function ForumModal(props: ForumModalProps) {
         <Stack gap="xl">
           {props.messages.map((m) => (
             <Group justify={userCtx.currUser?.username === m.username ? "flex-end" : "flex-start"}>
-              <Group w="50%">
-                <Group>
-                  <Avatar radius="xl" color="blue">
-                    {m.username?.slice(0, 2).toUpperCase()}
-                  </Avatar>
-                  <Text size="md">{m.username}</Text>
-                </Group>
-                <Text pl={54} size="sm">
-                  {m.message}
-                </Text>
+              <Group>
+                <Avatar radius="xl" color="blue">
+                  {m.username?.slice(0, 2).toUpperCase()}
+                </Avatar>
+                <Text size="md">{m.username}</Text>
               </Group>
+              <Text w="100%" pl="xl" size="sm">
+                {m.message}
+              </Text>
             </Group>
           ))}
           <Button leftSection={<IconPlus size={30} />} variant="outline" size="md" radius="md" onClick={handleClick}>
