@@ -36,7 +36,7 @@ function ForumModal(props: ForumModalProps) {
   return (
     <>
       <CreateMessageModal open={open} close={close} opened={opened} setMockData={props.setMockData} title={props.title} />
-      <Modal opened={props.opened} onClose={props.close} size="xl" title={<Text size="lg"> {props.title} </Text>} p="lg" radius="md" centered>
+      <Modal opened={props.opened} onClose={props.close} size="xl" title={<Text size="lg"> {props.title} </Text>} padding="lg" radius="md" centered>
         <Stack gap="xl">
           {props.messages.map((m) => (
             <Group justify={userCtx.currUser?.username === m.username ? "flex-end" : "flex-start"}>

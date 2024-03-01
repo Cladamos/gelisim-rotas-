@@ -49,13 +49,13 @@ export function Forum() {
         },
         {
           message:
-            "Merhaba Barlas;Ben Kayhan 3 yıl önce aynı sorunu ben de yaşadım. Sorun aslında yağmur yağma döneminin ne zaman olacağının tam saptanamaması olduğunu tespit ettim. Bunun için de Matirice Jr. takımının tasarladığı E-Farm uygulamasını kullandım. Özellikleri o kadar çok ki yağmur yağma döneminin ne zaman olduğunu belirlemek haricinde toprak türü için en uygun ürünü belirleyen aynı zamanda ürün ekim tarihini belirleyen bir uygulama. Kullanmanı tavsiye ederim.",
+            "Merhaba Barlas; ben Kayhan 3 yıl önce aynı sorunu ben de yaşadım. Sorun aslında yağmur yağma döneminin ne zaman olacağının tam saptanamaması olduğunu tespit ettim. Bunun için de Matirice Jr. takımının tasarladığı E-Farm uygulamasını kullandım. Özellikleri o kadar çok ki yağmur yağma döneminin ne zaman olduğunu belirlemek haricinde toprak türü için en uygun ürünü belirleyen aynı zamanda ürün ekim tarihini belirleyen bir uygulama. Kullanmanı tavsiye ederim.",
           username: "Kayhan",
         },
         {
           message:
             "Kayhan çok teşekkür ederim. Bu yıl sonunda hedefimizi tamamladık hatta üstüne bile çıktık. Uygulama gerçekten çok kullanışlıymış.",
-          username: "Kayhan",
+          username: "",
         },
       ],
     },
@@ -91,8 +91,8 @@ export function Forum() {
 
   return (
     <>
-      <ForumModal open={open} opened={opened} close={close} title={data.title} messages={data.messages} setMockData={setMockData} />
-      <Container size="md" pt={100}>
+      <Container size="lg" pt={100}>
+        <ForumModal open={open} opened={opened} close={close} title={data.title} messages={data.messages} setMockData={setMockData} />
         <Table.ScrollContainer minWidth={800}>
           <Table verticalSpacing="xs">
             <Table.Thead>
