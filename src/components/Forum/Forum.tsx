@@ -5,7 +5,7 @@ import { useState } from "react"
 import { useLocalStorage } from "usehooks-ts"
 
 export function Forum() {
-  const [data, setData] = useState({ title: "", messages: [] })
+  const [data, setData] = useState({ title: "", messages: [{ message: "", username: "" }] })
   const [opened, { open, close }] = useDisclosure(false)
   const [mockdata, setMockData] = useLocalStorage("forum-data", [
     {
@@ -28,7 +28,13 @@ export function Forum() {
     },
   ])
 
-  function handleClick(title: string, messages) {
+  function handleClick(
+    title: string,
+    messages: {
+      message: string
+      username: string
+    }[],
+  ) {
     setData({ title: title, messages: messages })
     open()
   }
