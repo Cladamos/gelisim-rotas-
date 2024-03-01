@@ -15,10 +15,10 @@ const data = [
       { label: "Sık Sorulan Sorular", link: "#faq" },
     ],
   },
-  /*   {
+  {
     title: "Topluluk",
     links: [{ label: "Forum", link: "/forum" }],
-  }, */
+  },
 ]
 
 export function Footer() {

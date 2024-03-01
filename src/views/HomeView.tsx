@@ -4,6 +4,7 @@ import { FeaturesCards } from "../components/FeaturesCards/FeatureCards"
 import { Footer } from "../components/Footer/Footer"
 import { GetInTouch } from "../components/GetInTouch/GetInTouch"
 import { HeroHeader } from "../components/HeroHeader/HeroHeader"
+import { UserComment } from "../components/UserComment"
 
 function HomeView() {
   return (
@@ -12,6 +13,7 @@ function HomeView() {
       <FeaturesCards />
       <GetInTouch />
       <Banner />
+      <UserComment />
       <Faq />
       <Footer />
     </>

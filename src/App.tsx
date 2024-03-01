@@ -9,6 +9,7 @@ import CalendarView from "./views/CalendarView"
 import { TodoProvider } from "./contexts/TodoContext"
 import TodoView from "./views/TodoView"
 import { UserProvider } from "./contexts/UserContext"
+import ForumView from "./views/ForumView"
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "/todos", index: true, element: <TodoView /> },
       { path: "/get-support", element: <GetSupportView /> },
       { path: "/calendar", element: <CalendarView /> },
+      { path: "/forum", element: <ForumView /> },
     ],
   },
 ])
